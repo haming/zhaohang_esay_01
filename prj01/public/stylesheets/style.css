@@ -1,8 +1,173 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+
+.red{
+  color: #c0071f;
+}
+
+.w980 {
+  width: 980px;
+  margin: 20px auto;
+}
+.crumb {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+ol, ul, li {
+  list-style: none;
 }
 
 a {
-  color: #00B7FF;
+  text-decoration: none;
+  color: black;
+}
+
+.breadcrumb-ico{
+  width: 10px;
+  height: 12px;
+  background: url(../images/other_ico.png) -70px -34px no-repeat;
+  vertical-align: middle;
+}
+
+.breadcrumb-item{
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.block_1 {
+  border: 1px solid #d1d1d1;
+  float: left;
+  margin-top: 10px;
+  width: 980px;
+}
+
+#middleColumn {
+  width: 980px;
+  margin: 0 auto;
+}
+
+div h6 {
+  width: 980px;
+  text-align: center;
+  color: #0077BB;
+  font-size: 22px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+.top {
+  width: 1058px;
+  margin: 0 auto;
+  height: 134px;
+}
+
+.block_1 .top {
+  background: url(../images/content_top.gif) repeat-x left top;
+  height: 34px;
+  padding-left: 20px;
+  width: 960px;
+}
+
+.title_icon_11 {
+  background: url(../images/zs_ico11.png) no-repeat left center;
+  height: 34px;
+}
+
+.title_icon_13 {
+  background: url(../images/zs_ico13.png) no-repeat left center;
+  height: 34px;
+}
+
+.title_icon_14 {
+  background: url(../images/zs_ico14.png) no-repeat left center;
+  height: 34px;
+}
+
+.title_icon_16 {
+  background: url(../images/zs_ico16.png) no-repeat left center;
+  height: 34px;
+}
+.title_icon_18 {
+  background: url(../images/zs_ico18.png) no-repeat left center;
+  height: 34px;
+}
+
+.title_icon_19 {
+  background: url(../images/zs_ico19.png) no-repeat left center;
+  height: 34px;
+}
+
+.title_icon_20 {
+  background: url(../images/zs_ico20.png) no-repeat left center;
+  height: 34px;
+}
+
+.title_icon_22 {
+  background: url(../images/user-card.png) no-repeat left center;
+  height: 34px;
+}
+
+.title_icon_23 {
+  background: url(../images/umbrella.png) no-repeat left center;
+  height: 34px;
+}
+
+.block_1 .top .title_1 {
+  display: block;
+  padding-left: 34px;
+  font-size: 15px;
+  color: #393939;
+  font-weight: bold;
+  line-height: 34px;
+  font-family: "Microsoft YaHei";
+  height: 34px;
+  padding-bottom: 0;
+}
+
+
+.zslist .tmxinxi {
+  padding: 10px 15px 5px;
+  border-top: 1px dotted #CACACA;
+  background: url(../images/bgtm.gif) no-repeat scroll 0 0 transparent;
+  background-size: 100% auto;
+}
+
+div.content ul {
+  margin-bottom: 2px;
+  line-height: 140%;
+}
+
+.zslist .tmxinxi ul li {
+  border: medium none;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+}
+
+.zslist .tmxinxi ul li.bl {
+  border-bottom: 1px dotted #CACACA;
+  border-top: 1px dotted #CACACA;
+  /* background: none repeat scroll 0 0 #E1F4FF; */
+}
+
+.zslist .tmxinxi ul li a {
+  float: left;
+}
+a {
+  color: #0077bb;
+  text-decoration: none;
+}
+
+img {
+  border: none;
+}
+
+img {
+  vertical-align: middle;
 }
