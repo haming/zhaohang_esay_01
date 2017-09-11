@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>招商信诺悦享康健保险计划</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link rel="stylesheet" href="./stylesheets/style.css">
+
+    <script src="./javascripts/jquery.min.js"></script>
+    <script src="./javascripts/index.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?40f5b2a409fd23652d5e709a45cc17dd";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+
+<div id="modal_tips" class="modal hide">
+    <div class="modal_contain">
+        <div class="modal_c" style="text-align: center">
+            <span id="modal_tips_content"></span>
+        </div>
+        <div class="modal_btn">好的</div>
+    </div>
+</div>
+
+<!--显示内容-->
+<div id="modal_success" class="modal hide">
+    <div class="modal_contain">
+        <div id="model_close" class="model_close">
+            <img src="./images/T_22.png" width="100%"/>
+        </div>
+        <div class="modal_c">
+            感谢您对小诺的信任！<br/>
+            依您的性别年龄估算，每月只需<span id="price"></span>元就可以享受覆盖<span class="modal_c_span">130种</span>疾病，<span  class="modal_c_span">20万</span>的高保额保障哦！<br/>
+            小诺将会通过<span class="modal_c_span">400-880-3633</span>热线致电您激活免费险，请告诉我们您方便的时间段:
+
+        </div>
+        <div class="model_c_time_contain">
+            <div class="model_time" style="margin-left: 3%">9:00-12:00</div>
+            <div class="model_time" style="margin-left: 5%">13:00-15:00</div>
+            <div class="model_time" style="margin-top: 3%;margin-left: 3%">15:00-18:00</div>
+            <div class="model_time" style="margin-top: 3%;margin-left: 5%">18:00-21:00</div>
+        </div>
+    </div>
+</div>
+
+<div class="main_bg">
+    <div class="contain t1">
+        <div class="t1_label1"><span class="red">130</span>种疾病<br/>保障周全</div>
+        <div class="t1_label2">
+            最高保到100岁<br/>满期生存返<span class="red">160%保费</span>
+        </div>
+        <div class="t1_label3"><span class="red">无需</span>体检<br/>确诊即赔</div>
+    </div>
+
+    <div class="t3_form_contain">
+        <form action="" method="post" id="myform" name="myform" target="myiframe">
+            <div class="t3_form">
+                <div class="form_label">姓名：</div>
+                <input class="form_input" name="name" id="name" type="text" maxlength="10" placeholder="您的信息将被严格保密">
+            </div>
+            <div class="t3_form">
+                <div class="form_label">手机：</div>
+                <input class="form_input" name="mobile" id="mobile" maxlength="11" type="tel" placeholder="用于接收保费测算结果">
+            </div>
+            <div class="t3_form">
+                <div class="form_label">性别：</div>
+                <div class="sex_selected">
+                    <div id="male" class="sex_items sex_items_selected">先生</div>
+                    <div id="female" class="sex_items" style="margin-left: 4%">女士</div>
+                </div>
+            </div>
+            <!--<div class="t3_form">-->
+                <!--<div class="form_label">省份：</div>-->
+                <!--<select id="pro" class="form_input form_address" name="province">-->
+                    <!--<option>请选择</option>-->
+                    <!--<option>北京市</option>-->
+                    <!--<option>辽宁省</option>-->
+                    <!--<option>上海市</option>-->
+                    <!--<option>江苏省</option>-->
+                    <!--<option>浙江省</option>-->
+                    <!--<option>山东省</option>-->
+                    <!--<option>河南省</option>-->
+                    <!--<option>湖北省</option>-->
+                    <!--<option>湖南省</option>-->
+                    <!--<option>广东省</option>-->
+                    <!--<option>重庆市</option>-->
+                    <!--<option>四川省</option>-->
+                    <!--<option>陕西省</option>-->
+                    <!--<option>其它</option>-->
+                <!--</select>-->
+            <!--</div>-->
+            <!--<div class="t3_form">-->
+                <!--<div class="form_label">年龄：</div>-->
+                <!--<div class="age_selected">-->
+                    <!--<div id="age1" class="age_items">25岁以下</div>-->
+                    <!--<div id="age2" class="age_items age_items_selected" style="margin-left: 2%">25-35岁</div>-->
+                    <!--<div id="age3" class="age_items" style="margin-left: 2%">35岁以上</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <div class="t3_form">
+                <div class="form_label">出生日期：</div>
+                img
+                <input class="form_input" type="date" name="user_date" />
+            </div>
+
+            <div class="t3_form">
+                <div class="form_label">保额：</div>
+                <input class="form_input" name="cost" id="cost" type="text" placeholder="以便于评估更精准保费报价">
+            </div>
+
+            <input type="hidden" id="iqId" name="iqId" value=""/>
+            <input type="hidden" id="campaignCode" name="campaignCode" value="1UG7FSTENCTCG01JU"/>
+            <input type="hidden" id="product" name="product" value="S2S"/>
+            <input type="hidden" id="urlFlag" name="urlFlag" value=""/>
+            <input type="hidden" id="gender" name="gender" value=""/>
+            <input type="hidden" id="url" name="url" value=""/>
+            <input type="hidden" id="remark" name="remark" value=""/>
+            <div class="t3_btn" id="t3_btn">
+                <span class="t3_btn_b">一键测保费</span><br/>
+                <span class="t3_btn_s">免费领10万公共交通意外险</span>
+            </div>
+            <div class="t3_form_allow ">
+                安全声明：您的信息将被严格保密，您提供的个人信息授权我公司用于本次报价及投保，我们不会泄露给任何第三方或其他用途
+            </div>
+        </form>
+        <iframe id="myiframe" name="myiframe" style="display: none;"></iframe>
+    </div>
+    <div class="detail_btn" id="t1_btn">产品特色介绍<img src="./images/T_12.png" style="width: 4%;margin-left: 1%"/></div>
+    <div class="contain t2">
+
+        <table>
+            <tbody>
+                <tr>
+                    <td style="width: 30%">
+                        <img src="./images/T_13.png" width="90%"/>
+                    </td>
+                    <td class="t2_td">保障130种疾病，最高保至100岁<br/>少儿发生特定疾病，额外多赔50%</td>
+                </tr>
+                <tr>
+                    <td style="width: 30%">
+                        <img src="./images/T_14.png" width="90%"/>
+                    </td>
+                    <td class="t2_td">期满生存，最高返还160%保费</td>
+                </tr>
+                <tr>
+                    <td style="width: 30%">
+                        <img src="./images/T_15.png" width="90%"/>
+                    </td>
+                    <td class="t2_td">重疾确诊，最高赔付40万<br/>额外可获12%保险关爱金，最高4.8万</td>
+                </tr>
+                <tr>
+                    <td style="width: 30%">
+                        <img src="./images/T_16.png" width="90%"/>
+                    </td>
+                    <td class="t2_td">轻症疾病确诊，先额外赔付30%保障<br/>后续保费免缴，保障依旧</td>
+                </tr>
+                <tr>
+                    <td style="width: 30%">
+                        <img src="./images/T_17.png" width="90%"/>
+                    </td>
+                    <td class="t2_td">无需体检，二级以上公立医院确诊即赔</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--<div class="t2_side_g s1">-->
+            <!--<div class="t2_s_t s_yellow">保障范围广</div>-->
+            <!--<div class="t2_s_b b_yellow">-->
+                <!--&lt;!&ndash;105种高发疾病<br/>&ndash;&gt;-->
+                <!--65种重疾<br/>-->
+                <!--35种特定疾病<br/>-->
+                <!--5种少儿特定疾病-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="t2_side_g s2">-->
+            <!--<div class="t2_s_t s_red">减免保费机会多</div>-->
+            <!--<div class="t2_s_b b_red">-->
+                <!--被保人发生35种特定<br/>-->
+                <!--轻度疾病和特定早期<br/>-->
+                <!--疾病，剩余保费全免，<br/>-->
+                <!--继续享受保障-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="t2_side_g s3">-->
+            <!--<div class="t2_s_t s_yellow">与社会无冲突</div>-->
+            <!--<div class="t2_s_b b_yellow">-->
+                <!--&lt;!&ndash;首次确诊一次性赔付&ndash;&gt;-->
+                <!--无需发票，首次确诊一<br/>-->
+                <!--次性赔付。与社会无冲<br/>-->
+                <!--突、不影响社保报销。<br/>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="t2_side_g s4">-->
+            <!--<div class="t2_s_t s_red">满期生存最高返128%保费</div>-->
+            <!--<div class="t2_s_b b_red">-->
+                <!--满期生存最高返128%<br/>-->
+                <!--保费，即便发生少儿<br/>-->
+                <!--及特定疾病理赔，依<br/>-->
+                <!--然享受。-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="t2_side_g s5">-->
+            <!--<div class="t2_s_t s_yellow">交费灵活保障长</div>-->
+            <!--<div class="t2_s_b b_yellow">-->
+                <!--交费10年即可保障20<br/>-->
+                <!--年；也可选择交费10、<br/>-->
+                <!--15、20年保障至80岁。<br/>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="t2_side_g s6">-->
+            <!--<div class="t2_s_t s_red">保单可借款</div>-->
+            <!--<div class="t2_s_b b_red">-->
+                <!--合同期内可申请保单现<br/>-->
+                <!--金价值80%借款，为您<br/>-->
+                <!--解决燃眉之急。<br/>-->
+            <!--</div>-->
+        <!--</div>-->
+
+    </div>
+    <div class="contain t3">
+
+        <div class="t3_top">
+            <div class="t3_s1">案例演示</div>
+            <div class="line"></div>
+            <div class="t3_s2">王先生，30岁，购买20万保额服务，保至100岁<br/>
+                月缴520元，可能经历
+            </div>
+            <table class="t3_table">
+                <tbody>
+                    <tr>
+                        <td style="text-align: left">
+                            <img src="./images/T_18.png" width="80%">
+                        </td>
+                        <td>
+                            <img src="./images/T_19.png" width="80%">
+                        </td>
+                        <td style="text-align: left;margin-left: 4%">
+                            <img src="./images/T_20.png" width="80%">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="t3_td">如果35岁时，<br/>
+                            确诊轻症，<br/>
+                            获赔<span class="red">6万元</span>，<br/>
+                            后续保费免除
+                        </td>
+                        <td class="t3_td" style="padding-left: 4%">如果40岁时，<br/>
+                            确诊重疾或身故，<br/>
+                            获赔<span class="red">20万元</span>
+                        </td>
+                        <td class="t3_td">如果期满生存，<br/>
+                            <span class="red">返还160%</span><br/>
+                            已缴保费
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="t4_top">
+            <div class="t4_s1">理赔流程</div>
+            <div class="line"></div>
+            <div class="t4_img">
+                <img src="./images/T_21.png" width="100%">
+            </div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="t4_td">出险报案致电<br/>
+                            400-888-8288</td>
+                        <td class="t4_td" style="padding-left: 13%">准备并寄送<br/>
+                            相关资料</td>
+                        <td class="t4_td" style="padding-left: 11%">我司进行理赔<br/>
+                            核定并给付</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="t3_label1">
+                专业坐席专员，为您提供一对一产品定制和理赔跟进服务。
+            </div>
+            <div class="t3_label">
+                品牌+专业，优质服务+贴心产品，您的最佳选择
+            </div>
+        </div>
+        <div class="t3_end">
+            <img src="./images/T_05.png"/>
+        </div>
+    </div>
+    <div class="center_btn" id="center_btn">
+        <img src="./images/T_09.png"/>
+        <div class="center_l1">
+            免费送<span class="center_span">10万</span>公交意外险
+        </div>
+        <div class="center_line"></div>
+        <div class="center_l2">点击免费领取</div>
+    </div>
+</div>
+<!--显示内容-->
+
+<div class="loading" style="display:none;">
+    <table>
+        <tbody>
+        <tr>
+            <td><img src="./images/loading.gif" width="40px"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<!--Toast-->
+<div id='tips'
+     style='display:none;position: fixed;z-index:600;top:40%;padding:15px 15px;margin:0 auto;width: 260px;background: rgba(0,0,0,0.6);border-radius:10px;text-align: center;color: #fff'>
+    <div id='tips_content' style='font-size: 14px'></div>
+</div>
+</body>
+</html>
